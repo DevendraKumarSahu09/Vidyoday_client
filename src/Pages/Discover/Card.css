@@ -1,0 +1,121 @@
+:root {
+
+  --primary-color: #FF7F3E;
+  --secondary-color: #FFF6E9;
+  --accent-color: #80C4E9;
+  --dark-color: #604CC3;
+
+}
+
+h3 {
+  font-family: var(--secfont);
+  margin: 10px 0;
+  font-size: 1.3rem !important;
+}
+
+h6 {
+  font-family: var(--secfont);
+  font-size: 1rem !important;
+  margin: 5px 0;
+  text-transform: uppercase;
+}
+
+p {
+  font-family: var(--secfont);
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.card-container {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  font-family: var(--secfont) !important;
+  background-color: white !important;
+  border-radius: 25px !important;
+  box-shadow: 10px 10px 15px rgba(140, 63, 255, 0.13) !important;
+  color: var(--dark-color) !important;
+  position: relative !important;
+  width: 320px !important;
+  min-width: 300px !important;
+  height: 450px !important;
+  max-width: 100% !important;
+  text-align: center !important;
+  margin: 3rem !important;
+  overflow: hidden !important;
+}
+
+
+.card-container img {
+  border: 1px solid #a270ff;
+  border-radius: 50%;
+  padding: 7px;
+  height: 100px;
+  width: 100px;
+  margin: 1rem;
+}
+
+.prof-buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
+button.primary {
+  margin: 1rem;
+  background-color: #fff !important;
+  border: 1px solid var(--dark-color) !important;
+  border-radius: 3px;
+  color: var(--dark-color) !important;
+  font-family: Montserrat, sans-serif;
+  font-weight: 600;
+  padding: 0.4rem;
+  transition: 0.3s ease-in-out;
+}
+
+
+button.primary:hover {
+  background-color: var(--dark-color) !important;
+  color: white !important;
+}
+
+button.primary.ghost:hover {
+  background-color: var(--dark-color);
+}
+
+.profskills {
+  background-color: #ffe8c77b !important;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.3rem;
+  text-align: left;
+  margin-top: 1rem;
+  height: 15vh;
+  width: 100%;
+  bottom: 0;
+  overflow-y: auto;
+}
+
+.profskill-boxes {
+  margin: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.profskill-box {
+  text-align: center;
+  background-color: var(--primary-color) !important;
+  color: white;
+  padding: 0.5rem;
+  margin-right: 1rem;
+  margin-top: 1rem;
+  border-radius: 5px;
+  min-width: 4rem;
+}
+
+@media (max-width: 768px) {
+  .card-container {
+    width: 50vw;
+    height: 50vh;
+  }
+}

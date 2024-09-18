@@ -1,0 +1,19 @@
+.loginContainerStyle {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--secondary-color);
+    justify-content: space-between;
+    width: 100%;
+    min-height: 88vh;
+  }
+  
+  @media (max-width: 780px) {
+    .loginContainerStyle {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center !important;
+    }
+  }
+  
