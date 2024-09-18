@@ -7,8 +7,8 @@ const Login = () => {
   const [isHovered, setIsHovered] = useState(false); // State for hover effect
 
   const handleGoogleLogin = () => {
-    // window.location.href = "https://vidyoday-server.onrender.com/auth/google";
-    window.location.href = "http://localhost:8000/auth/google";
+    window.location.href = "https://vidyoday-server.onrender.com/auth/google";
+    // window.location.href = "http://localhost:8000/auth/google";
   };
 
   const containerStyle = {
