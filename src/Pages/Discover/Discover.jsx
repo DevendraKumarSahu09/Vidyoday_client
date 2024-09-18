@@ -36,7 +36,7 @@ const Discover = () => {
     const getUser = async () => {
       try {
         setLoading(true);
-        const { data } = await axios.get(`/user/registered/getDetails`);
+        const { data } = await axios.get(`https://vidyoday-server.onrender.com/user/registered/getDetails`);
         console.log(data.data);
         setUser(data.data);
         localStorage.setItem("userInfo", JSON.stringify(data.data));
@@ -53,7 +53,7 @@ const Discover = () => {
     };
     const getDiscoverUsers = async () => {
       try {
-        const { data } = await axios.get("/user/discover");
+        const { data } = await axios.get("https://vidyoday-server.onrender.com/user/discover");
         console.log(data);
         setDiscoverUsers(data.data.forYou);
         setWebDevUsers(data.data.webDev);
